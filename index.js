@@ -45,9 +45,9 @@ function dosyaAdiniBul(dizinParam) {
 
 function ortalamaBul(sayiArrayi) {
   let ortalama = sayiArrayi.reduce((sum, item) => {
-    return sum + item/sayiArrayi.length;
+    return sum + item;
   }, null );
-  return ortalama ? Math.round(ortalama) : ortalama;
+  return ortalama ? ortalama/sayiArrayi.length : ortalama;
   
 }
 // console.log(ortalamaBul([]));
